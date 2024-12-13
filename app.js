@@ -49,7 +49,7 @@ function createThumbnails(imagesArray) {
     newImage.className = "ImageStyle";
     //we need add an event to the image elements we are creating here
     newImage.addEventListener("click", function () {
-      largeContainer.appendChild(createLargeImagesHandler);
+      largeContainer.appendChild(newImage);
     });
     //we need to append the images to the thumbnail container
     thumbnail.appendChild(newImage);
@@ -64,17 +64,11 @@ createThumbnails(images);
 //This function will be event handler for our images
 function createLargeImagesHandler(largeImage) {
   //I want to remove the image that's in the full screen, and create a new image with new properties
-  largeContainer.innerHTML = "";
+  //   largeContainer.innerHTML = "";
   //create an image element
-  const newImage = largeImage;
-  largeImage.src = newImage.src;
-  largeImage.alt = newImage.alt;
-  largeImage.className = largeImageStyle;
   //assign values to the image element
   //add a className to style the large image
-
   //append the image to the largeImageContainer
-  largeContainer.appendChild(largeImage);
 }
 //!we don't call the createLargeImagesHandler in here. It is an event handler!
 

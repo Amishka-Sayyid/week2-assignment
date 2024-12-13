@@ -41,10 +41,7 @@ h1 {
   left: 0;
   right: 0;
 }
-#large-image-container .largeImageStyle {
-  height: 100vh;
-  margin: auto;
-}
+
 /* you need to resize the images in the large container to cover the full screen */
 /*! we need media queries! */
 /* you can approach the design from a desktop or mobile point of view. If you start from mobile, you need to scale up to desktop. If you start as desktop, you need to scale down to mobile */
