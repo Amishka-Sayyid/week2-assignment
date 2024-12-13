@@ -48,6 +48,9 @@ function createThumbnails(imagesArray) {
     //we also need to assign a value to the className property
     newImage.className = "ImageStyle";
     //we need add an event to the image elements we are creating here
+    newImage.addEventListener("click", function () {
+      largeContainer.appendChild(newImage);
+    });
     //we need to append the images to the thumbnail container
     thumbnail.appendChild(newImage);
   });

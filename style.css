@@ -6,13 +6,28 @@
   box-sizing: border-box;
   background-color: rgb(238, 241, 245);
 }
+body {
+  position: absolute;
+  display: block;
+}
 #thumbnail-container {
   border: 1px solid black;
-  position: absolute;
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   height: 8rem;
+  left: 2rem;
+  right: 2rem;
+  top: 1rem;
+  z-index: 10rem;
+}
+
+#large-image-container {
+  position: relative;
+  width: 100vh;
+  height: 100vh;
+  margin: 2rem;
   left: 2rem;
   right: 2rem;
 }
