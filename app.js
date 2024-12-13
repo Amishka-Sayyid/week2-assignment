@@ -26,25 +26,28 @@ const images = [
     alt: "a peafowl peacock with its feathers spread open",
   },
 ];
-//!commit your work!
 
 //TODO: I want to create my thumbnail images
 //STEP 1: Select the DOM element we are manipulating
 //I need to select both the thumbnail container and the large image container
-
-//Since creating the thumbnail images takes more than one step, what is the best way to write a block of code? A function!
-//I want to resuse this function for all my images --> I need parameters
+const thumbnail = document.getElementById("thumbnail-container");
+const largeContainer = document.getElementById("large-image-container");
 
 function createThumbnails(imagesArray) {
   //I need to create more than one thumbnail --> I can use a loop
   //You can use different ways to loop thorugh your array: for loop / forEach()
-  //Inside the loop, we have a few steps to do:
-  //create an image element
-  //we need assign values to the image element properties
-  //src = value
-  //we also need to assign a value to the className property
-  //we need add an event to the image elements we are creating here
-  //we need to append the images to the thumbnail container
+  for (let imagesArray of images) {
+    //Inside the loop, we have a few steps to do:
+    //create an image element
+    const newImg = document.createElement("img");
+    //we need assign values to the image element properties
+    newImg.src = images(src);
+    newImg.alt = images(alt);
+    //we also need to assign a value to the className property
+    newImg.className = classname;
+    //we need add an event to the image elements we are creating here
+    //we need to append the images to the thumbnail container
+  }
 }
 createThumbnails(images);
 
