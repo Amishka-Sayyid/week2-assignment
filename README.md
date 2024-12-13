@@ -5,8 +5,11 @@ a repo for wk 2 assignment to build an image gallery mostly with javascript and 
 ---
 
 **User Stories**
+
 🐿️ As a user, I want the website design to adjust using media queries so that it works well on both small mobile screens and larger desktop screens.
+
 🐿️ As a user with accessibility needs, I expect accessible considerations like alternative text for images so my screen reader can interpret and convey the content to me effectively.
+
 🐿️ As a user, I want to easily switch between images in the gallery using buttons so that my experience is smooth and intuitive.
 
     *Requirements*
@@ -16,9 +19,13 @@ a repo for wk 2 assignment to build an image gallery mostly with javascript and 
 
 **Stretch Goals**
 _Stretch User Stories_
+
 🐿️ As a user, I want the website to use ‘srcset’ to display appropriately sized images for my device, so that images load quickly and look sharp on any screen.
+
 🐿️ As a user with accessibility needs, I want ARIA elements, such as aria-label, aria-live, and other relevant attributes, to improve my interaction with the website.
+
 🐿️ As a user, I want to use keyboard shortcuts, like arrow keys, to switch between images easily.
+
 🐿️ As a user on various devices, I want the website to adapt to different screen sizes through the use of media queries for an optimal viewing experience.
 
     *Stretch Requirements*
@@ -30,6 +37,7 @@ _Stretch User Stories_
 ---
 
 **Reflection**
+
 Please also provide an assignment reflection in your project README.md file.
 
     *Required*
@@ -38,6 +46,7 @@ Please also provide an assignment reflection in your project README.md file.
     🎯 If so, what was it that you found difficult about these tasks?
 
 _Optional_
+
 🏹 Feel free to add any other reflections you would like to share about your submission, for example:
 
     🎯Requesting feedback about a specific part of your submission.
