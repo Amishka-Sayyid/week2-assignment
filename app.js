@@ -65,11 +65,16 @@ createThumbnails(images);
 //This function will be event handler for our images
 function createLargeImagesHandler(largeImage) {
   //I want to remove the image that's in the full screen, and create a new image with new properties
-  // largeImageContainer.innerHTML = null / ""
+  largeContainer.innerHTML = "";
   //create an image element
+  const Image = document.getElementsByName(newImage);
   //assign values to the image element
+  Image.src = newImage.src;
+  Image.alt = newImage.alt;
   //add a className to style the large image
+  Image.className = largeImageStyle;
   //append the image to the largeImageContainer
+  largeContainer.appendChild(Image);
 }
 //!we don't call the createLargeImagesHandler in here. It is an event handler!
 
