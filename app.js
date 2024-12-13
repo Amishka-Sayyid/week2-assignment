@@ -29,26 +29,28 @@ const images = [
 
 //TODO: I want to create my thumbnail images
 //STEP 1: Select the DOM element we are manipulating
-//I need to select both the thumbnail container and the large image container
+
 const thumbnail = document.getElementById("thumbnail-container");
 const largeContainer = document.getElementById("large-image-container");
 
 function createThumbnails(imagesArray) {
   //I need to create more than one thumbnail --> I can use a loop
   //You can use different ways to loop thorugh your array: for loop / forEach()
+  //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
+  //i used the above to understand how to use the for each.
   imagesArray.forEach((images) => {
+    //Inside the loop, we have a few steps to do:
+    //create an image element
     const newImage = document.createElement("img");
+    //we need assign values to the image element properties
     newImage.src = images.src;
     newImage.alt = images.alt;
-
+    //we also need to assign a value to the className property
+    newImage.className = "ImageStyle";
+    //we need add an event to the image elements we are creating here
+    //we need to append the images to the thumbnail container
     thumbnail.appendChild(newImage);
   });
-  //Inside the loop, we have a few steps to do:
-  //create an image element
-  //we need assign values to the image element properties
-  //we also need to assign a value to the className property
-  //we need add an event to the image elements we are creating here
-  //we need to append the images to the thumbnail container
 }
 createThumbnails(images);
 
