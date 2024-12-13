@@ -12,6 +12,9 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  height: 8rem;
+  left: 2rem;
+  right: 2rem;
 }
 .ImageStyle {
   position: relative;
