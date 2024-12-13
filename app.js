@@ -38,9 +38,8 @@ function createThumbnails(imagesArray) {
   //You can use different ways to loop thorugh your array: for loop / forEach()
   imagesArray.forEach((images) => {
     const newImage = document.createElement("img");
-    newImage.src = images(src);
-    newImage.alt = images(alt);
-    newImage.className = className;
+    newImage.src = images.src;
+    newImage.alt = images.alt;
 
     thumbnail.appendChild(newImage);
   });
