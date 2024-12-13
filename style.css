@@ -41,7 +41,7 @@ h1 {
   left: 0;
   right: 0;
 }
-.largeImageStyle {
+#large-image-container .largeImageStyle {
   height: 100vh;
   margin: auto;
 }
