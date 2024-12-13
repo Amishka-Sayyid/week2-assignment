@@ -36,23 +36,20 @@ const largeContainer = document.getElementById("large-image-container");
 function createThumbnails(imagesArray) {
   //I need to create more than one thumbnail --> I can use a loop
   //You can use different ways to loop thorugh your array: for loop / forEach()
-  for (let imagesArray of images) {
-    //Inside the loop, we have a few steps to do:
-    //create an image element
-    const newImg = document.createElement("img");
-    //we need assign values to the image element properties
-    newImg.src = imagesArray(src);
-    newImg.alt = imagesArray(src);
-    //we also need to assign a value to the className property
-    newImg.className = classname;
-    //we need add an event to the image elements we are creating here
-    newImg.addEventListener("onClick", function () {
-      newImg.style.width = "100";
-      newImg.style.height = "50";
-    });
-    //we need to append the images to the thumbnail container
-    thumbnail.appendChild(newImg);
-  }
+  imagesArray.forEach((images) => {
+    const newImage = document.createElement("img");
+    newImage.src = images(src);
+    newImage.alt = images(alt);
+    newImage.className = className;
+
+    thumbnail.appendChild(newImage);
+  });
+  //Inside the loop, we have a few steps to do:
+  //create an image element
+  //we need assign values to the image element properties
+  //we also need to assign a value to the className property
+  //we need add an event to the image elements we are creating here
+  //we need to append the images to the thumbnail container
 }
 createThumbnails(images);
 
