@@ -2,11 +2,29 @@ console.log("test");
 
 //TODO: I want to store my images
 const images = [
-  { src: "url", alt: "a description of the image" },
-  { src: "local relative path", alt: "a description of the image" },
-  { src: "url", alt: "a description of the image" },
-  { src: "local relative path", alt: "a description of the image" },
-  { src: "url", alt: "a description of the image" },
+  {
+    src: "./images/dalmatian-dog.jpg",
+    alt: "a picture of a dalmatian dog pet playing with falling leaves on a path of a park during autumn.",
+  },
+  { src: "./images/deer.jpg", alt: "a picture of a red deer in the woods" },
+  {
+    src: "./images/elephant.jpg",
+    alt: "a picture of an elephant in the forest",
+  },
+  {
+    src: "./images/european-shorthair-cat.jpg",
+    alt: "a picture of a european shorthair cat",
+  },
+  { src: "images/fox.jpg", alt: "an image of a fox taken during winter" },
+  { src: "images/leopard.jpg", alt: "a leopard lying on a tree branch" },
+  {
+    src: "images/parrot-yellow-macau.jpg",
+    alt: "a beautiful yellow macau parrot",
+  },
+  {
+    src: "images/peafowl-peacock.jpg",
+    alt: "a peafowl peacock with its feathers spread open",
+  },
 ];
 //!commit your work!
 
