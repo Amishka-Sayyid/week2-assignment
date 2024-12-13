@@ -18,6 +18,7 @@ a repo for wk 2 assignment to build an image gallery mostly with javascript and 
     🎯 Correctly use event handlers to switch images based on user interactions.
 
 **Stretch Goals**
+
 _Stretch User Stories_
 
 🐿️ As a user, I want the website to use ‘srcset’ to display appropriately sized images for my device, so that images load quickly and look sharp on any screen.
