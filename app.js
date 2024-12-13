@@ -41,12 +41,17 @@ function createThumbnails(imagesArray) {
     //create an image element
     const newImg = document.createElement("img");
     //we need assign values to the image element properties
-    newImg.src = images(src);
-    newImg.alt = images(alt);
+    newImg.src = imagesArray(src);
+    newImg.alt = imagesArray(src);
     //we also need to assign a value to the className property
     newImg.className = classname;
     //we need add an event to the image elements we are creating here
+    newImg.addEventListener("onClick", function () {
+      newImg.style.width = "100";
+      newImg.style.height = "50";
+    });
     //we need to append the images to the thumbnail container
+    thumbnail.appendChild(newImg);
   }
 }
 createThumbnails(images);
