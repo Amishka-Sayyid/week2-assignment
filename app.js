@@ -40,7 +40,7 @@ function createThumbnails(imagesArray) {
     newImage.alt = images.alt;
     newImage.className = "ImageStyle";
     newImage.addEventListener("click", function () {
-      createLargeImagesHandler();
+      createLargeImagesHandler(images);
     });
 
     thumbnail.appendChild(newImage);
@@ -54,15 +54,14 @@ createThumbnails(images);
 //The larger images will be created when the user triggers the thumbnail images event
 //This function will be event handler for our images
 function createLargeImagesHandler() {
-  for (i = 0; i < images.length; i++) {
-    console.log(images[i]);
-    largeContainer.innerHTML = null;
-    let largeImage = document.createElement("img");
-    largeImage.src = images.src;
-    largeImage.alt = images.alt;
-    largeImage.className = "largeImageStyle";
-    largeContainer.appendChild(largeImage);
-  }
+  console.log(images);
+  largeContainer.innerHTML = null;
+  let largeImage = document.createElement("img");
+  largeImage.src = images.src;
+  largeImage.alt = images.alt;
+  largeImage.className = "largeImageStyle";
+  largeContainer.appendChild(largeImage);
+  console.log(largeImage);
 }
 //!we don't call the createLargeImagesHandler in here. It is an event handler!
 

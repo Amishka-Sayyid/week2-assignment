@@ -28,12 +28,13 @@ h1 {
   border: 1px solid black;
   margin: 2rem;
 }
-#thumbnail-container .ImageStyle {
+.ImageStyle {
   display: block;
   left: 0;
   right: 0;
   filter: grayscale();
   transition: 1s;
+  border: 1px solid rgb(206, 68, 68);
 }
 #large-image-container {
   display: block;
