@@ -51,6 +51,7 @@ function createThumbnails(imagesArray) {
     newImage.addEventListener("click", function () {
       largeContainer.appendChild(newImage);
     });
+
     //we need to append the images to the thumbnail container
     thumbnail.appendChild(newImage);
   });
