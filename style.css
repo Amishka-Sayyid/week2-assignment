@@ -28,14 +28,6 @@ h1 {
   border: 1px solid black;
   margin: 2rem;
 }
-
-#large-image-container {
-  display: block;
-  height: 100vh;
-  margin: 2rem;
-  left: 2rem;
-  right: 2rem;
-}
 #thumbnail-container .ImageStyle {
   display: block;
   left: 0;
@@ -43,6 +35,14 @@ h1 {
   filter: grayscale();
   transition: 1s;
 }
+#large-image-container {
+  display: block;
+  height: 100vh;
+  margin: 2rem;
+  left: 2rem;
+  right: 2rem;
+}
+
 #thumbnail-container .ImageStyle:hover {
   filter: grayscale(0);
   transform: scale(1.1);
@@ -70,6 +70,7 @@ h1 {
 }
 .largeImageStyle {
   height: 100vh;
+  width: 100vh;
 }
 /* you need to resize the images in the large container to cover the full screen */
 /*! we need media queries! */

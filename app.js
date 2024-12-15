@@ -40,7 +40,7 @@ function createThumbnails(imagesArray) {
     newImage.alt = images.alt;
     newImage.className = "ImageStyle";
     newImage.addEventListener("click", function () {
-      largeContainer.appendChild(newImage);
+      createLargeImagesHandler();
     });
 
     thumbnail.appendChild(newImage);
@@ -57,10 +57,10 @@ function createLargeImagesHandler() {
   for (i = 0; i < images.length; i++) {
     console.log(images[i]);
     largeContainer.innerHTML = "";
-    const largeImage = document.getElementsByName("img");
-    largeImage.src = images.src;
-    largeImage.alt = images.alt;
-    largeImage.className = "ImageStyle";
+    const largeImage = document.getElementsByName("newImage");
+    largeImage.src = imagesArray.src;
+    largeImage.alt = imagesArray.alt;
+    largeImage.className = "largeImageStyle";
     largeContainer.appendChild(largeImage);
   }
 }
