@@ -56,10 +56,10 @@ createThumbnails(images);
 function createLargeImagesHandler() {
   for (i = 0; i < images.length; i++) {
     console.log(images[i]);
-    largeContainer.innerHTML = "";
-    const largeImage = document.getElementsByName("newImage");
-    largeImage.src = imagesArray.src;
-    largeImage.alt = imagesArray.alt;
+    largeContainer.innerHTML = null;
+    let largeImage = document.createElement("img");
+    largeImage.src = images.src;
+    largeImage.alt = images.alt;
     largeImage.className = "largeImageStyle";
     largeContainer.appendChild(largeImage);
   }
