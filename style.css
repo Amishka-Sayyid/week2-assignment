@@ -73,6 +73,38 @@ h1 {
   height: 100vh;
   width: 100vh;
 }
+
+@media (max-width: 600px) {
+  #thumbnail-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    height: 4rem;
+    border: 1px solid black;
+    margin: 2rem;
+  }
+  .ImageStyle {
+    display: block;
+    left: 0;
+    right: 0;
+    filter: grayscale();
+    transition: 1s;
+    border: 1px solid rgb(206, 68, 68);
+  }
+  #large-image-container {
+    display: block;
+    height: 50vh;
+    margin: 2rem;
+    left: 2rem;
+    right: 2rem;
+    width: 70vh;
+  }
+
+  #thumbnail-container .ImageStyle:hover {
+    filter: grayscale(0);
+    transform: scale(1.1);
+  }
+}
 /* you need to resize the images in the large container to cover the full screen */
 /*! we need media queries! */
 /* you can approach the design from a desktop or mobile point of view. If you start from mobile, you need to scale up to desktop. If you start as desktop, you need to scale down to mobile */

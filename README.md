@@ -43,15 +43,23 @@ Please also provide an assignment reflection in your project README.md file.
 
     *Required*
     🎯 What requirements did you achieve?
+        didn't achieve much jusy managed to do the thuumbnail work my large image container doesn't work.
+        i managed to add the alt text for the images for the accessability.
+
     🎯 Were there any requirements or goals that you were unable to achieve?
+        majority of them.
     🎯 If so, what was it that you found difficult about these tasks?
+        i feel like i need more practic3 on javascript .
 
 _Optional_
 
 🏹 Feel free to add any other reflections you would like to share about your submission, for example:
 
     🎯Requesting feedback about a specific part of your submission.
+
     🎯What useful external sources helped you complete the assignment (e.g Youtube tutorials)?
+        https://youtu.be/C1B1Fx3XKOg?si=f8LZD-ZT58DP9ZxV
+        https://youtu.be/Zi-Q0t4gMC8?si=digftFqcpt4JBcRf(i watched about 40min of this ).
     🎯What errors or bugs did you encounter while completing your assignment? How did you solve them?
     🎯What went really well and what could have gone better?
 
