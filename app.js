@@ -34,6 +34,7 @@ const thumbnail = document.getElementById("thumbnail-container");
 const largeContainer = document.getElementById("large-image-container");
 
 function createThumbnails(imagesArray) {
+  //b4 i was passing the whole image data i needed to make sure the  createLargeImagesHandler recived the single image data being clicked. hence the imageData parameter.
   imagesArray.forEach((imageData) => {
     const newImage = document.createElement("img");
     newImage.src = imageData.src;
@@ -47,7 +48,6 @@ function createThumbnails(imagesArray) {
   });
 }
 createThumbnails(images);
-
 //!commit your work!
 
 //TODO: I want to create my larger images

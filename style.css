@@ -6,27 +6,22 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: rgb(238, 241, 245);
 }
 body {
   position: relative;
   display: block;
-  background-color: bisque;
 }
-h1 {
-  text-align: center;
-  font-size: 3rem;
-  font-family: "Cookie", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
+
 #thumbnail-container {
   display: flex;
   flex-direction: row;
   gap: 2rem;
-  height: 6rem;
+  height: 5rem;
   border: 1px solid black;
   margin: 2rem;
+  position: fixed;
+  text-align: center;
+  left: 5rem;
 }
 .ImageStyle {
   display: block;
@@ -57,6 +52,7 @@ h1 {
   font-size: 30px;
   padding: 0.3rem;
   float: left;
+  position: fixed;
 }
 #goRightBtn {
   border: 1px solid rgb(230, 169, 169);
@@ -68,10 +64,12 @@ h1 {
   padding: 0.3rem;
   right: 0;
   float: right;
+  position: fixed;
 }
 .largeImageStyle {
-  height: 100vh;
-  width: 100vh;
+  width: 200vh;
+  text-align: center;
+  opacity: 2;
 }
 
 @media (max-width: 600px) {
@@ -79,9 +77,11 @@ h1 {
     display: flex;
     flex-direction: row;
     gap: 2rem;
-    height: 4rem;
+    height: 5rem;
     border: 1px solid black;
-    margin: 2rem;
+    position: fixed;
+    bottom: 3rem;
+    left: 0;
   }
   .ImageStyle {
     display: block;
@@ -93,11 +93,15 @@ h1 {
   }
   #large-image-container {
     display: block;
-    height: 50vh;
+    height: 100vh;
     margin: 2rem;
     left: 2rem;
     right: 2rem;
-    width: 70vh;
+  }
+  .largeImageStyle {
+    width: 200vh;
+    text-align: center;
+    opacity: 2;
   }
 
   #thumbnail-container .ImageStyle:hover {
