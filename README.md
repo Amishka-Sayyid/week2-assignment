@@ -43,13 +43,13 @@ Please also provide an assignment reflection in your project README.md file.
 
     *Required*
     🎯 What requirements did you achieve?
-        didn't achieve much jusy managed to do the thuumbnail work my large image container doesn't work.
+        didn't achieve much jusy managed to do the thumbnail work my large image container doesn't work.(ps. after submission i managed to find the issue and changed it i was not passing the correct parameter as i was passing the whole array instead of only one clicked image data.)
         i managed to add the alt text for the images for the accessability.
 
     🎯 Were there any requirements or goals that you were unable to achieve?
         majority of them.
     🎯 If so, what was it that you found difficult about these tasks?
-        i feel like i need more practic3 on javascript .
+        i feel like i need more practice on javascript .
 
 _Optional_
 
@@ -60,8 +60,13 @@ _Optional_
     🎯What useful external sources helped you complete the assignment (e.g Youtube tutorials)?
         https://youtu.be/C1B1Fx3XKOg?si=f8LZD-ZT58DP9ZxV
         https://youtu.be/Zi-Q0t4gMC8?si=digftFqcpt4JBcRf(i watched about 40min of this ).
+
+        what helped the most was the walking skeleton provided in class as it helped pave the way on how to tackleto try and tackle the assignment. as i was doing it i went through most of the demos in class to try and recal especially how to do the arrays, functions and loops.
     🎯What errors or bugs did you encounter while completing your assignment? How did you solve them?
+        the error encountered were on the javascript and what helped were my classmates whom i consulted and were able to give me an overview on where i might have gone wrong. i'm really greatfull to them.
     🎯What went really well and what could have gone better?
+
+        i need to work more on my javascript by doing more projects so that i may remember the concepts more easily.
 
 **resources**
 =images from https://pixabay.com/images/search/animals/
