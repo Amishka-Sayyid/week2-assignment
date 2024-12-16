@@ -34,13 +34,13 @@ const thumbnail = document.getElementById("thumbnail-container");
 const largeContainer = document.getElementById("large-image-container");
 
 function createThumbnails(imagesArray) {
-  imagesArray.forEach((images) => {
+  imagesArray.forEach((imageData) => {
     const newImage = document.createElement("img");
-    newImage.src = images.src;
-    newImage.alt = images.alt;
+    newImage.src = imageData.src;
+    newImage.alt = imageData.alt;
     newImage.className = "ImageStyle";
     newImage.addEventListener("click", function () {
-      createLargeImagesHandler(images);
+      createLargeImagesHandler(imageData);
     });
 
     thumbnail.appendChild(newImage);
@@ -53,15 +53,14 @@ createThumbnails(images);
 //TODO: I want to create my larger images
 //The larger images will be created when the user triggers the thumbnail images event
 //This function will be event handler for our images
-function createLargeImagesHandler() {
-  console.log(images);
+function createLargeImagesHandler(imageData) {
+  console.log(imageData);
   largeContainer.innerHTML = null;
-  let largeImage = document.createElement("img");
-  largeImage.src = images.src;
-  largeImage.alt = images.alt;
+  const largeImage = document.createElement("img");
+  largeImage.src = imageData.src; //use the clicked images's src
+  largeImage.alt = imageData.alt;
   largeImage.className = "largeImageStyle";
   largeContainer.appendChild(largeImage);
-  console.log(largeImage);
 }
 //!we don't call the createLargeImagesHandler in here. It is an event handler!
 
