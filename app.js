@@ -62,6 +62,5 @@ function createLargeImagesHandler(imageData) {
   largeImage.className = "largeImageStyle";
   largeContainer.appendChild(largeImage);
 }
-//!we don't call the createLargeImagesHandler in here. It is an event handler!
 
-//!commit your work!
+createLargeImagesHandler(images[0]);
