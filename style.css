@@ -7,10 +7,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  position: relative;
-  display: block;
-}
+
 h1 {
   text-align: center;
   font-size: 2rem;
@@ -18,49 +15,46 @@ h1 {
   font-weight: 400;
   font-style: normal;
   z-index: 2rem;
+  background-image: linear-gradient(
+    180deg,
+    rgb(219, 156, 135),
+    rgb(232, 193, 163, 0)
+  );
+  color: #333;
+  padding: 1rem;
 }
 
 #thumbnail-container {
-  display: flex;
-  flex-direction: row;
   gap: 2rem;
-  height: 5rem;
-  margin: 2rem;
   position: fixed;
-  text-align: center;
-  left: 6rem;
+  height: 5rem;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  right: 0;
+  z-index: 1;
 }
 .ImageStyle {
   display: block;
-  left: 0;
-  right: 0;
   filter: grayscale();
   transition: 1s;
   border: 1px solid black;
 }
 #large-image-container {
   display: block;
-  height: 100vh;
-  margin: 2rem;
-  left: 2rem;
-  right: 2rem;
+  height: 80vh;
+  margin: auto;
+  width: 170vh;
+  object-fit: cover;
+  z-index: 0;
 }
 
 #thumbnail-container .ImageStyle:hover {
   filter: grayscale(0);
   transform: scale(1.1);
 }
-#goLeftBtn {
-  border: 1px solid rgb(230, 169, 169);
-  border-radius: 30px;
-  text-align: center;
-  text-decoration: none;
-  line-height: 40px;
-  font-size: 30px;
-  padding: 0.3rem;
-  float: left;
-  position: fixed;
-}
+#goLeftBtn,
 #goRightBtn {
   border: 1px solid rgb(230, 169, 169);
   border-radius: 30px;
@@ -69,32 +63,38 @@ h1 {
   line-height: 40px;
   font-size: 30px;
   padding: 0.3rem;
-  right: 0;
-  float: right;
   position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
 }
+#goLeftBtn {
+  left: 1rem;
+}
+
+#goRightBtn {
+  right: 1rem;
+}
+
 .largeImageStyle {
-  width: 200vh;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
   text-align: center;
-  opacity: 2;
 }
 
 @media (max-width: 600px) {
   h1 {
-    text-align: center;
-    font-size: 2rem;
-    font-family: "Cookie", cursive;
-    font-weight: 400;
-    font-style: normal;
+    font-size: 1.5rem;
   }
   #thumbnail-container {
     display: flex;
     flex-direction: row;
-    gap: 2rem;
+    gap: 1rem;
     height: 5rem;
     position: fixed;
-    bottom: 3rem;
+    bottom: 2rem;
     left: 0;
+    right: 0;
   }
   .ImageStyle {
     display: block;
@@ -106,21 +106,39 @@ h1 {
   }
   #large-image-container {
     display: block;
-    height: 100vh;
-    margin: 2rem;
-    left: 2rem;
-    right: 2rem;
+    height: 70vh;
+    margin: 1rem;
+    width: 90%;
+    object-fit: contain;
+    text-align: center;
   }
   .largeImageStyle {
-    width: 200vh;
+    width: 90%;
+    height: 100%;
+    opacity: 1;
+    object-fit: contain;
     text-align: center;
-    opacity: 2;
-    height: 70vh;
   }
 
   #thumbnail-container .ImageStyle:hover {
     filter: grayscale(0);
     transform: scale(1.1);
+  }
+
+  #goLeftBtn,
+  #goRightBtn {
+    font-size: 24px; /* Adjust button size on mobile */
+    padding: 0.3rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  #goLeftBtn {
+    left: 1rem;
+  }
+
+  #goRightBtn {
+    right: 1rem;
   }
 }
 /* you need to resize the images in the large container to cover the full screen */
