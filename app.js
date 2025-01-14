@@ -35,13 +35,13 @@ const largeContainer = document.getElementById("large-image-container");
 
 function createThumbnails(imagesArray) {
   //b4 i was passing the whole image data i needed to make sure the  createLargeImagesHandler recived the single image data being clicked. hence the imageData parameter.
-  imagesArray.forEach((imageData) => {
+  imagesArray.forEach((imageData, index) => {
     const newImage = document.createElement("img");
     newImage.src = imageData.src;
     newImage.alt = imageData.alt;
     newImage.className = "ImageStyle";
     newImage.addEventListener("click", function () {
-      createLargeImagesHandler(imageData);
+      createLargeImagesHandler(imageData, index);
     });
 
     thumbnail.appendChild(newImage);
@@ -53,14 +53,37 @@ createThumbnails(images);
 //TODO: I want to create my larger images
 //The larger images will be created when the user triggers the thumbnail images event
 //This function will be event handler for our images
-function createLargeImagesHandler(imageData) {
+function createLargeImagesHandler(imageData, currentIndex) {
   console.log(imageData);
   largeContainer.innerHTML = null;
   const largeImage = document.createElement("img");
   largeImage.src = imageData.src; //use the clicked images's src
   largeImage.alt = imageData.alt;
   largeImage.className = "largeImageStyle";
+
+  // Create Previous Button
+  const prevButton = document.createElement("button");
+  prevButton.innerText = "Previous";
+
+  prevButton.addEventListener("click", () => {
+    const prevIndex = (currentIndex - 1 + images.length) % images.length;
+
+    createLargeImagesHandler(images[prevIndex], prevIndex);
+  });
+
+  // Create Next Button
+  const nextButton = document.createElement("button");
+  nextButton.innerText = "Next";
+
+  nextButton.addEventListener("click", () => {
+    const nextIndex = (currentIndex + 1) % images.length;
+
+    createLargeImagesHandler(images[nextIndex], nextIndex);
+  });
+
+  largeContainer.appendChild(prevButton);
   largeContainer.appendChild(largeImage);
+  largeContainer.appendChild(nextButton);
 }
 
 createLargeImagesHandler(images[0]);
