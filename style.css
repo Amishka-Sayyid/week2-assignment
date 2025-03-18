@@ -41,6 +41,7 @@ h1 {
   filter: grayscale();
   transition: 1s;
   border: 1px solid black;
+  object-fit: cover;
 }
 .ImageStyle:focus,
 .ImageStyle:focus-visible {
@@ -64,7 +65,8 @@ h1 {
 .largeImageStyle {
   height: 100%;
   width: 90%;
-  object-fit: contain;
+  object-fit: cover;
+  border-radius: 2rem;
 }
 
 button {
