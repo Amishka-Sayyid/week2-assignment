@@ -2,10 +2,6 @@ console.log("test");
 
 //TODO: I want to store my images
 const images = [
-  {
-    src: "./images/dalmatian-dog.jpg",
-    alt: "a picture of a dalmatian dog pet playing with falling leaves on a path of a park during autumn.",
-  },
   { src: "./images/deer.jpg", alt: "a picture of a red deer in the woods" },
   {
     src: "./images/elephant.jpg",
@@ -16,14 +12,10 @@ const images = [
     alt: "a picture of a european shorthair cat",
   },
   { src: "images/fox.jpg", alt: "an image of a fox taken during winter" },
-  { src: "images/leopard.jpg", alt: "a leopard lying on a tree branch" },
+
   {
     src: "images/parrot-yellow-macau.jpg",
     alt: "a beautiful yellow macau parrot",
-  },
-  {
-    src: "images/peafowl-peacock.jpg",
-    alt: "a peafowl peacock with its feathers spread open",
   },
 ];
 
@@ -86,4 +78,4 @@ function createLargeImagesHandler(imageData, currentIndex) {
   largeContainer.appendChild(nextButton);
 }
 
-createLargeImagesHandler(images[0]);
+createLargeImagesHandler(images[0], 0);
